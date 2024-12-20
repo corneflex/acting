@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --matrix-green: #00ff00;
+  --matrix-dark-green: #003300;
+}
+
+body {
+  background-color: #000;
+  color: var(--matrix-green);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.matrix-glow {
+  text-shadow: 0 0 10px var(--matrix-green);
+}
+
+.matrix-border {
+  border-color: var(--matrix-green);
+  box-shadow: 0 0 10px var(--matrix-dark-green);
+}
+
+input, textarea, select {
+  background-color: rgba(0, 51, 0, 0.3) !important;
+  border-color: var(--matrix-green) !important;
+  color: var(--matrix-green) !important;
+}
+
+input:focus, textarea:focus, select:focus {
+  box-shadow: 0 0 10px var(--matrix-green) !important;
+}
+
+button {
+  background-color: var(--matrix-dark-green) !important;
+  border: 1px solid var(--matrix-green) !important;
+}
+
+button:hover {
+  background-color: var(--matrix-green) !important;
+  color: black !important;
+}
